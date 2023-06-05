@@ -1,6 +1,16 @@
 
 $font-principal: 'Fira Code', monospace;
 $font-secundary: 'Poppins', sans-serif;
+$color-primary: #070707;
+$color-primary-2: #011221;
+$color-secundary: #607b96;
+$color-secundary-2: #607b9683;
+$color-secundary-3: #43d9ad;
+$color-secundary-4: #fff;
+$color-accent: #e99287;
+$color-accent-2: #1e2d3d;
+$color-accent-3: #4d5bce;
+$color-accent-4: #7000ff;
 
 .container{
     max-width: 120rem;
@@ -19,7 +29,7 @@ $font-secundary: 'Poppins', sans-serif;
 
 .btn{
     font-size: 1.8rem;
-    font-family: $font-mont;
+    font-family: $font-principal;
     font-weight: 700;
     text-transform: uppercase;
     padding: 2rem 4rem;

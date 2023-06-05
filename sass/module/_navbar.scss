@@ -1,0 +1,59 @@
+.nav_bar{
+    width: 100%;
+    position: fixed;
+    background-color: $color-primary;
+    div{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: $color-secundary;
+                font-family: $font-principal;
+                font-size: 1.8rem;
+            }
+        }
+        .navbar{
+            ul{
+                display: flex;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 8rem;
+                    a{
+                        text-align: center;
+                        align-items: center;
+                        color: $color-secundary-2;
+                        font-family: $font-principal;
+                        font-size: 1.6rem;
+                        transition: all .3s;
+                        // border-left:  .1rem solid $color-secundary-2;
+                        
+                        padding-top: 2rem;
+                        
+                        &:hover{
+                            color: $color-secundary-4;
+                            padding-bottom: .5rem;                       
+                            border-bottom:  .3rem ridge $color-secundary-4;
+                            
+                            transition: all .3s; 
+                            span{
+                                    text-transform: uppercase;
+                                    transition: all .05s; 
+                            }
+                        }
+                        
+                    }
+                    &:last-child{
+                        a{
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
