@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
 <body>
     <nav class="nav_bar">
         <div class="container pt-2 pb-2">
-            <div class="logo"> <a href="#">< Marco Mendoza /></a> </div>
+            <div class="logo"> <a href="#"><span> < </span>Marco Mendoza<span> /> </span></a> </div>
             <div class="navbar">
                 <ul>
                     <li><a href="#">_<span>a</span>bout-me</a></li>
@@ -26,9 +27,81 @@
         </div>
     </nav>
     <section class="principal">
-        <div class="container">
+        <div class="container part">
+            <div class="texto pt-10">
+                <p>Hi all. I am</p>
+                <div class="typer">
+                    <span class="multiText"></span>
+                </div>
+                <div class="modo">> Fronted developer</div>
+                <div class="comentario">
+                    <p>// welcome to my portafolio, press Z</p>
+                    <p>// you can also see my project on my github page</p>
+                </div>
+                <div class="const">
+                    <p><span>const</span> <span class="variable">githubLink</span> <span> = </span> <a target="_blank" href="http://github.com/Xekram2194"> “https://github.com/Xekram2194” </a> </p>
+                </div>
+                <div class="btncv">
+                    <a href="#"></a>
+                </div>
+
+            </div>
+            <div class="imagen">
+                <div class="imgbox">
+                    
+                    <div class="cloud2">
+                        <img src="img/principal/cloud.png" alt="">
+                    </div>
+                    <div class="land">
+                        <img src="img/principal/land2.png" alt="">
+                    </div>
+                    <div class="computa">
+                        <img src="img/principal/computadora.png" alt="">
+                    </div>
+                    <div class="block1">
+                        <img src="img/principal/block.png" alt="">
+                    </div>
+                    <div class="block2">
+                        <img src="img/principal/block 2.png" alt="">
+                    </div>
+                    <div class="block3">
+                        <img src="img/principal/block 3.png" alt="">
+                    </div>
+                    <div class="land1">
+                        <img src="img/principal/land2.png" alt="">
+                    </div>
+                    <div class="land2">
+                        <img src="img/principal/land2.png" alt="">
+                    </div>
+                    <div class="land3">
+                        <img src="img/principal/land2.png" alt="">
+                    </div>
+                    <div class="cloud1">
+                        <img src="img/principal/cloud.png" alt="">
+                    </div>
+                    <div class="land4">
+                        <img src="img/principal/land2.png" alt="">
+                    </div>
+                    <div class="tubo">
+                        <img src="img/principal/tubo.png" alt="">
+                    </div>
+                    <div class="land5">
+                        <img src="img/principal/land2.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        let typingEffect = new Typed(".multiText", {
+            strings : ['coder','gamer','designer','Marco Mendoza','xekram' ],
+            loop: true,
+            typeSpeed: 180,
+            backSpeed: 100,
+            backDelay: 5
+        })
+    </script>
 <script src="js/codigo.js"></script>
 </html>

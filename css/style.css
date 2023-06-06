@@ -43,7 +43,7 @@ a {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 140rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -262,6 +262,15 @@ a {
   color: #607b96;
   font-family: "Fira Code", monospace;
   font-size: 1.8rem;
+  transition: all 0.2s ease-in-out;
+}
+.nav_bar div .logo a:hover {
+  transform: scale(1.2);
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.nav_bar div .logo a:hover span {
+  color: #43d9ad;
 }
 .nav_bar div .navbar ul {
   display: flex;
@@ -298,6 +307,222 @@ a {
 .principal {
   background-color: #070707;
   height: 100vh;
+}
+.principal .part {
+  display: flex;
+}
+.principal .part .texto {
+  padding-top: 25rem;
+}
+.principal .part .texto > p {
+  font-family: "Fira Code", monospace;
+  color: #fff;
+}
+.principal .part .texto > p:first-child {
+  font-size: 2.5rem;
+}
+.principal .part .texto .typer {
+  font-family: "Fira Code", monospace;
+  color: #fff;
+}
+.principal .part .texto .typer span {
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-size: 6.2rem;
+}
+.principal .part .texto .modo {
+  font-family: "Fira Code", monospace;
+  font-size: 3.2rem;
+  color: #4d5bce;
+}
+.principal .part .texto .comentario {
+  padding-top: 7.5rem;
+}
+.principal .part .texto .comentario p {
+  font-family: "Fira Code", monospace;
+  font-size: 2.2rem;
+  color: rgba(96, 123, 150, 0.5137254902);
+}
+.principal .part .texto .const {
+  padding: 2rem 0;
+}
+.principal .part .texto .const > p {
+  font-family: "Fira Code", monospace;
+  font-size: 2.5rem;
+  color: #e99287;
+}
+.principal .part .texto .const > p > span:first-child {
+  color: #4d5bce;
+}
+.principal .part .texto .const > p > span:nth-child(2) {
+  color: #43d9ad;
+}
+.principal .part .texto .const > p > span:nth-child(3) {
+  color: #fff;
+}
+.principal .part .texto .const > p a {
+  color: #e99287;
+  cursor: pointer;
+}
+.principal .part .texto .btncv {
+  padding-top: 3rem;
+}
+.principal .part .texto .btncv > a {
+  font-family: "Fira Code", monospace;
+  font-size: 1.5rem;
+  border-radius: 1.7rem;
+  border: 0.2rem solid #3bbf98;
+  box-shadow: 1.6rem 1.4rem 2rem rgba(61, 197, 97, 0.5490196078);
+  width: 17rem;
+  height: 4em;
+  color: #607b96;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.principal .part .texto .btncv > a::before {
+  content: "";
+  background-image: conic-gradient(#fff 100deg, transparent 120deg);
+  width: 15rem;
+  height: 4rem;
+  position: absolute;
+  animation: rotate 4s linear infinite;
+}
+.principal .part .texto .btncv > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f019" " " "curriculum";
+  width: 16.5rem;
+  height: 5.7rem;
+  top: 0.2rem;
+  left: 0.2rem;
+  background: #101010;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #607b96;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.5490196078);
+  transition: all 0.2s ease-in-out;
+}
+.principal .part .texto .btncv > a:hover::after {
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  content: "curriculum";
+  color: #fff;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.principal .part .imagen .imgbox {
+  height: 100%;
+  position: relative;
+}
+.principal .part .imagen .imgbox .land {
+  position: absolute;
+  top: 50%;
+}
+.principal .part .imagen .imgbox .computa {
+  top: 40%;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .block1 {
+  top: 34rem;
+  left: 41rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .block2 {
+  top: 29rem;
+  left: 29rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .block3 {
+  top: 41rem;
+  left: 21rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .land1 {
+  top: 24rem;
+  left: 48rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .land1 img {
+  width: 8rem;
+}
+.principal .part .imagen .imgbox .land2 {
+  top: 77rem;
+  left: 51rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .land2 img {
+  width: 7rem;
+}
+.principal .part .imagen .imgbox .land3 {
+  top: 33rem;
+  left: 3rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .land3 img {
+  width: 8rem;
+}
+.principal .part .imagen .imgbox .land4 {
+  top: 40rem;
+  right: 76rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .land4 img {
+  width: 12rem;
+}
+.principal .part .imagen .imgbox .land5 {
+  top: 78rem;
+  right: 68rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .land5 img {
+  width: 14rem;
+}
+.principal .part .imagen .imgbox .tubo {
+  top: 77rem;
+  right: 70rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .tubo img {
+  width: 5rem;
+}
+.principal .part .imagen .imgbox .cloud1 {
+  top: 9rem;
+  left: 25rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .cloud1 img {
+  width: 28rem;
+}
+.principal .part .imagen .imgbox .cloud2 {
+  top: 63rem;
+  left: 1rem;
+  position: absolute;
+}
+.principal .part .imagen .imgbox .cloud2 img {
+  overflow: hidden;
+  width: 40rem;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

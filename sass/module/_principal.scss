@@ -1,4 +1,242 @@
 .principal{
     background-color: $color-primary;
+    // background-color: $color-secundary-4;
     height: 100vh;
+    .part{
+        display: flex;
+        .texto{
+            padding-top: 25rem;
+            >p{
+                font-family: $font-principal;
+                color: $color-secundary-4;
+                &:first-child{
+                    font-size: 2.5rem;
+                }
+                
+            }
+            .typer{
+                    
+                font-family: $font-principal;
+                color: $color-secundary-4;
+                span{
+                    padding: .5rem 0;
+                    text-transform: uppercase;
+                    font-size: 6.2rem;
+                }
+            }
+            .modo{
+                font-family: $font-principal;
+                font-size: 3.2rem;
+                color: $color-accent-3;
+            }
+            .comentario{
+                padding-top: 7.5rem;
+                p{
+                    font-family: $font-principal;
+                    font-size: 2.2rem;
+                    color: $color-secundary-2;
+                }
+            }
+            .const{
+                padding: 2rem 0;
+                >p{
+                    font-family: $font-principal;
+                    font-size: 2.5rem;
+                    color: $color-accent;
+                    >span{
+                        &:first-child{
+                            color: $color-accent-3;
+                        }
+                        &:nth-child(2){
+                            color: $color-secundary-3;
+                        }
+                        &:nth-child(3){
+                            color: $color-secundary-4;
+                        }
+                    }
+                    a{
+                        color: $color-accent;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .btncv{
+                padding-top: 3rem;
+                >a{
+                    font-family: $font-principal;
+                    font-size: 1.5rem;
+                    border-radius: 1.7rem;
+                    border: .2rem solid $color-btn;
+                    box-shadow: 1.6rem 1.4rem 2rem #3dc5618c;
+                    // padding: 2rem;
+                    width: 17rem;
+                    height: 4em;
+                    color: $color-secundary;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    &::before{
+                        content: "";
+                        background-image: conic-gradient($color-secundary-4 100deg, transparent 120deg);
+                        width: 15rem;
+                        height: 4rem;
+                        position: absolute;
+                        animation: rotate 4s linear infinite;
+                    }
+                    &::after{
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f019" " " "curriculum";
+                        width: 16.5rem;
+                        height: 5.7rem;
+                        top: .2rem;
+                        left: .2rem;
+                        background: #101010;
+                        position: absolute;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $color-secundary;
+                        box-shadow: inset 20px 20px 20px #0000008c;
+                        transition: all .2s ease-in-out;
+                    }
+                    &:hover::after{
+                        font-family: $font-principal;
+                        font-weight: 300;
+                        content: "curriculum";
+                        color: $color-secundary-4;
+                        letter-spacing: .1rem;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+                
+                @keyframes rotate {
+                    0%{
+                        transform: rotate(0deg);
+                    }
+                    25%{
+                        transform: rotate(90deg);
+                    }
+                    50%{
+                        transform: rotate(-180deg);
+                    }
+                    75%{
+                        transform: rotate(270deg);
+                    }
+                    100%{
+                        transform: rotate(-360deg);
+                    }
+                }
+            }
+        }
+        .imagen{
+            .imgbox{
+                height: 100%;
+                position: relative;
+                .land{
+                    position: absolute;
+                    top: 50%;
+                }
+                .computa{
+                    top: 40%;
+                    position: absolute;
+                }
+                .block1{
+                    top: 34rem;
+                    left: 41rem;
+                    // right: 100%;
+                    position: absolute;
+                }
+                .block2{
+                    top: 29rem;
+                    left: 29rem;
+                    // right: 100%;
+                    position: absolute;
+                }
+                .block3{
+                    top: 41rem;
+                    left: 21rem;
+                    // right: 100%;
+                    position: absolute;
+                }
+                .land1{
+                    top: 24rem;
+                    left: 48rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        width: 8rem;
+                    }
+                }
+                .land2{
+                    top: 77rem;
+                    left: 51rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        width: 7rem;
+                    }
+                }
+                .land3{
+                    top: 33rem;
+                    left: 3rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        width: 8rem;
+                    }
+                }
+                .land4{
+                    top: 40rem;
+                    right: 76rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        width: 12rem;
+                    }
+                }
+                
+                .land5{
+                    top: 78rem;
+                    right: 68rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        width: 14rem;
+                    }
+                }
+                
+                .tubo{
+                    top: 77rem;
+                    right: 70rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        width: 5rem;
+                    }
+                }
+                .cloud1{
+                    top: 9rem;
+                    left: 25rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        width: 28rem;
+                    }
+                }
+                .cloud2{
+                    top: 63rem;
+                    left: 1rem;
+                    // right: 100%;
+                    position: absolute;
+                    img{
+                        overflow: hidden;
+                        width: 40rem;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
 }

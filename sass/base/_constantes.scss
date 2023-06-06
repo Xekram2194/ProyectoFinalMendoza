@@ -1,6 +1,7 @@
 
 $font-principal: 'Fira Code', monospace;
 $font-secundary: 'Poppins', sans-serif;
+// $font-tercery: 'Fira Code', "Font Awesome 5 Free";
 $color-primary: #070707;
 $color-primary-2: #011221;
 $color-secundary: #607b96;
@@ -11,9 +12,10 @@ $color-accent: #e99287;
 $color-accent-2: #1e2d3d;
 $color-accent-3: #4d5bce;
 $color-accent-4: #7000ff;
+$color-btn:#3bbf98;
 
 .container{
-    max-width: 120rem;
+    max-width: 140rem;
     margin-left: auto;
     margin-right: auto;
     // @media only screen and (max-width: $bp-large){

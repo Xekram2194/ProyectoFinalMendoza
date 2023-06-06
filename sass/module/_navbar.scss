@@ -13,6 +13,15 @@
                 color: $color-secundary;
                 font-family: $font-principal;
                 font-size: 1.8rem;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                    color: $color-secundary-4;
+                    transition: all .2s ease-in-out;
+                    span{
+                            color: $color-secundary-3;
+                    }
+                }
             }
         }
         .navbar{
