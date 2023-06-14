@@ -6,6 +6,14 @@
     768PX / 16PX => 48
     576PX / 16PX => 36
     480PX / 16PX => 30
+
+    1400PX / 16PX => 87.5
+    1200PX / 16PX => 75
+    992PX / 16PX => 62
+    768PX / 16PX => 48
+    576PX / 16PX => 36
+    480PX / 16PX => 30
+
 */
 * {
   margin: 0;
@@ -312,7 +320,7 @@ a {
   display: flex;
 }
 .principal .part .texto {
-  padding-top: 25rem;
+  padding-top: 20rem;
 }
 .principal .part .texto > p {
   font-family: "Fira Code", monospace;
@@ -391,7 +399,7 @@ a {
 .principal .part .texto .btncv > a::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f019" " " "curriculum";
+  content: "";
   width: 16.5rem;
   height: 5.7rem;
   top: 0.2rem;
@@ -406,13 +414,31 @@ a {
   box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.5490196078);
   transition: all 0.2s ease-in-out;
 }
-.principal .part .texto .btncv > a:hover::after {
-  font-family: "Fira Code", monospace;
-  font-weight: 300;
-  content: "curriculum";
+.principal .part .texto .btncv > a > div {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.principal .part .texto .btncv > a > div i {
+  color: #43d9ad;
+}
+.principal .part .texto .btncv > a > div span {
+  text-align: center;
+  width: 100%;
   color: #fff;
-  letter-spacing: 0.1rem;
-  transition: all 0.2s ease-in-out;
+  font-family: "Fira Code", monospace;
+}
+.principal .part .texto .btncv > a > div:hover i {
+  color: #fff;
+}
+.principal .part .texto .btncv > a > div:hover span {
+  font-family: "Poppins", sans-serif;
+  color: #43d9ad;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 @keyframes rotate {
   0% {
@@ -431,6 +457,11 @@ a {
     transform: rotate(-360deg);
   }
 }
+@media only screen and (max-height: 915px) {
+  .principal .part .texto {
+    padding-top: 18rem;
+  }
+}
 .principal .part .imagen .imgbox {
   height: 100%;
   position: relative;
@@ -439,24 +470,66 @@ a {
   position: absolute;
   top: 50%;
 }
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .land {
+    left: 5rem;
+  }
+  .principal .part .imagen .imgbox .land img {
+    width: 40rem;
+  }
+}
 .principal .part .imagen .imgbox .computa {
   top: 40%;
   position: absolute;
+}
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .computa {
+    left: 4rem;
+  }
+  .principal .part .imagen .imgbox .computa img {
+    width: 40rem;
+  }
 }
 .principal .part .imagen .imgbox .block1 {
   top: 34rem;
   left: 41rem;
   position: absolute;
 }
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .block1 {
+    left: 36rem;
+  }
+  .principal .part .imagen .imgbox .block1 img {
+    width: 6rem;
+  }
+}
 .principal .part .imagen .imgbox .block2 {
   top: 29rem;
   left: 29rem;
   position: absolute;
 }
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .block2 {
+    top: 26rem;
+    left: 25rem;
+  }
+  .principal .part .imagen .imgbox .block2 img {
+    width: 9rem;
+  }
+}
 .principal .part .imagen .imgbox .block3 {
   top: 41rem;
   left: 21rem;
   position: absolute;
+}
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .block3 {
+    top: 36rem;
+    left: 17rem;
+  }
+  .principal .part .imagen .imgbox .block3 img {
+    width: 6rem;
+  }
 }
 .principal .part .imagen .imgbox .land1 {
   top: 24rem;
@@ -474,6 +547,15 @@ a {
 .principal .part .imagen .imgbox .land2 img {
   width: 7rem;
 }
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .land2 {
+    top: 51rem;
+    left: 52rem;
+  }
+  .principal .part .imagen .imgbox .land2 img {
+    width: 10rem;
+  }
+}
 .principal .part .imagen .imgbox .land3 {
   top: 33rem;
   left: 3rem;
@@ -490,21 +572,48 @@ a {
 .principal .part .imagen .imgbox .land4 img {
   width: 12rem;
 }
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .land4 {
+    top: 31rem;
+    right: 71rem;
+  }
+  .principal .part .imagen .imgbox .land4 img {
+    width: 12rem;
+  }
+}
 .principal .part .imagen .imgbox .land5 {
-  top: 78rem;
-  right: 68rem;
+  top: 62rem;
+  right: 19rem;
   position: absolute;
 }
 .principal .part .imagen .imgbox .land5 img {
-  width: 14rem;
+  width: 25rem;
+}
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .land5 {
+    top: 56rem;
+    right: 21rem;
+  }
+  .principal .part .imagen .imgbox .land5 img {
+    width: 15rem;
+  }
 }
 .principal .part .imagen .imgbox .tubo {
-  top: 77rem;
-  right: 70rem;
+  top: 63rem;
+  right: 26rem;
   position: absolute;
 }
 .principal .part .imagen .imgbox .tubo img {
-  width: 5rem;
+  width: 8rem;
+}
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .tubo {
+    top: 56rem;
+    right: 24rem;
+  }
+  .principal .part .imagen .imgbox .tubo img {
+    width: 6rem;
+  }
 }
 .principal .part .imagen .imgbox .cloud1 {
   top: 9rem;
@@ -523,6 +632,46 @@ a {
   overflow: hidden;
   width: 40rem;
   z-index: 0;
+}
+@media only screen and (max-height: 915px) {
+  .principal .part .imagen .imgbox .cloud2 {
+    top: 56rem;
+    left: 11rem;
+  }
+  .principal .part .imagen .imgbox .cloud2 img {
+    width: 34rem;
+  }
+}
+
+.about {
+  background-color: #070707;
+  height: 100vh;
+  color: #607b96;
+  font-family: "Fira Code", monospace;
+}
+.about .container .title {
+  padding-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.about .container .title .part1 {
+  display: flex;
+}
+.about .container .title .part1 .logoimg {
+  border: 5px solid #43d9ad;
+  border-radius: 50%;
+  width: 12rem;
+  overflow: hidden;
+}
+.about .container .title .part1 .logoimg img {
+  width: 100%;
+}
+.about .container .title .part1 .name h2 {
+  font-size: 3rem;
+  color: #4d5bce;
+}
+.about .container .title .part1 .name p {
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
