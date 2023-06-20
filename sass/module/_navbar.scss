@@ -1,7 +1,7 @@
 .nav_bar{
     width: 100%;
     position: fixed;
-    background-color: $color-primary;
+    background-color: $color-primary-2;
     div{
         display: flex;
         justify-content: space-between;
@@ -32,6 +32,12 @@
                     align-items: center;
                     justify-content: center;
                     padding-left: 8rem;
+                    .active{
+                        color: $color-btn;
+                        span{
+                                text-transform: uppercase;
+                        }
+                    }
                     a{
                         text-align: center;
                         align-items: center;

@@ -255,7 +255,7 @@ a {
 .nav_bar {
   width: 100%;
   position: fixed;
-  background-color: #070707;
+  background-color: #011221;
 }
 .nav_bar div {
   display: flex;
@@ -289,6 +289,12 @@ a {
   justify-content: center;
   padding-left: 8rem;
 }
+.nav_bar div .navbar ul li .active {
+  color: #3bbf98;
+}
+.nav_bar div .navbar ul li .active span {
+  text-transform: uppercase;
+}
 .nav_bar div .navbar ul li a {
   text-align: center;
   align-items: center;
@@ -313,7 +319,7 @@ a {
 }
 
 .principal {
-  background-color: #070707;
+  background-color: #011221;
   height: 100vh;
 }
 .principal .part {
@@ -644,15 +650,22 @@ a {
 }
 
 .about {
-  background-color: #070707;
+  background-color: #011221;
   height: 100vh;
   color: #607b96;
   font-family: "Fira Code", monospace;
 }
 .about .container .title {
   padding-top: 15rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-height: 915px) {
+  .about .container .title {
+    padding-top: 8.5rem;
+    padding-bottom: 3rem;
+  }
 }
 .about .container .title .part1 {
   display: flex;
@@ -666,12 +679,710 @@ a {
 .about .container .title .part1 .logoimg img {
   width: 100%;
 }
+.about .container .title .part1 .name {
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
 .about .container .title .part1 .name h2 {
   font-size: 3rem;
   color: #4d5bce;
+  padding-bottom: 1rem;
 }
 .about .container .title .part1 .name p {
   font-size: 1.8rem;
+}
+.about .container .title .part2 {
+  display: flex;
+  align-items: center;
+}
+.about .container .title .part2 p {
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+}
+.about .container .title .part2 p:first-child {
+  padding-right: 2rem;
+}
+.about .container .text {
+  position: relative;
+  background-color: rgba(30, 45, 61, 0.5254901961);
+}
+.about .container .text .container2 {
+  font-family: "Fira Code", monospace;
+  padding: 2rem;
+  font-size: 2rem;
+}
+@media only screen and (max-height: 915px) {
+  .about .container .text .container2 {
+    font-size: 1rem;
+  }
+}
+.about .container .text .container2 .morado {
+  color: #4d5bce;
+}
+.about .container .text .container2 .green {
+  font-weight: 300;
+  color: #43d9ad;
+}
+.about .container .text .container2 .naranja {
+  font-weight: 300;
+  color: #e99287;
+}
+.about .container .text .container2 > p {
+  font-size: 1.8rem;
+}
+@media only screen and (max-height: 915px) {
+  .about .container .text .container2 > p {
+    font-size: 1.8rem;
+  }
+}
+.about .container .images {
+  position: relative;
+}
+.about .container .images div {
+  position: absolute;
+}
+.about .container .images div:first-child {
+  top: 22rem;
+  left: 66rem;
+}
+.about .container .images div:first-child img {
+  width: 85rem;
+}
+@media only screen and (max-height: 915px) {
+  .about .container .images div:first-child {
+    top: -7rem;
+    left: 57rem;
+  }
+  .about .container .images div:first-child img {
+    width: 80rem;
+  }
+}
+.about .container .images div:nth-child(2) {
+  top: 19rem;
+  left: -7rem;
+}
+.about .container .images div:nth-child(2) img {
+  width: 14rem;
+}
+.about .container .images div:nth-child(3) {
+  top: 42rem;
+  left: -1rem;
+}
+.about .container .images div:nth-child(3) img {
+  width: 6rem;
+}
+@media only screen and (max-height: 915px) {
+  .about .container .images div:nth-child(3) {
+    top: 32rem;
+    left: 125rem;
+  }
+  .about .container .images div:nth-child(3) img {
+    width: 5rem;
+  }
+}
+.about .container .images div:nth-child(4) {
+  top: 40rem;
+  left: -10rem;
+}
+.about .container .images div:nth-child(4) img {
+  width: 23rem;
+}
+@media only screen and (max-height: 915px) {
+  .about .container .images div:nth-child(4) {
+    top: 33rem;
+    left: 120rem;
+  }
+  .about .container .images div:nth-child(4) img {
+    width: 14rem;
+  }
+}
+
+.project {
+  background-color: #011221;
+  height: 100vh;
+  color: #607b96;
+  font-family: "Fira Code", monospace;
+}
+.project .container .title {
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-height: 915px) {
+  .project .container .title {
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
+  }
+}
+.project .container .title .part1 {
+  display: flex;
+}
+.project .container .title .part1 .logoimg {
+  border: 5px solid #43d9ad;
+  border-radius: 50%;
+  width: 12rem;
+  overflow: hidden;
+}
+.project .container .title .part1 .logoimg img {
+  width: 100%;
+}
+.project .container .title .part1 .name {
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+.project .container .title .part1 .name h2 {
+  font-size: 3rem;
+  color: #4d5bce;
+  padding-bottom: 1rem;
+}
+.project .container .title .part1 .name p {
+  font-size: 1.8rem;
+}
+.project .container .title .part2 {
+  display: flex;
+  align-items: center;
+}
+.project .container .title .part2 p {
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+}
+.project .container .title .part2 p:first-child {
+  padding-right: 2rem;
+}
+.project .container .text {
+  position: relative;
+  background-color: rgba(30, 45, 61, 0.5254901961);
+}
+.project .container .text .container2 {
+  font-family: "Fira Code", monospace;
+  padding: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+}
+.project .container .text .container2 .cardPrincipal {
+  padding: 2rem 0;
+  width: 40rem;
+}
+.project .container .text .container2 .cardPrincipal .title2 {
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+.project .container .text .container2 .cardPrincipal .title2 p {
+  color: #4d5bce;
+}
+.project .container .text .container2 .cardPrincipal .title2 p span {
+  color: #607b96;
+}
+.project .container .text .container2 .cardPrincipal .card {
+  border: 0.1rem solid #607b96;
+  background-color: #011221;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.project .container .text .container2 .cardPrincipal .card .image {
+  border: 0.1rem solid #607b96;
+  border-radius: 2rem;
+  width: 39.8rem;
+  height: 14rem;
+  overflow: hidden;
+}
+.project .container .text .container2 .cardPrincipal .card .image img {
+  width: 100%;
+  object-fit: fill;
+}
+.project .container .text .container2 .cardPrincipal .card .resume {
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.project .container .text .container2 .cardPrincipal .card .buton {
+  display: flex;
+  justify-content: start;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+.project .container .text .container2 .cardPrincipal .card .buton > a {
+  border: 0.1rem solid #1C2B3A;
+  background-color: #1C2B3A;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  padding: 1.5rem 2rem;
+  border-radius: 1.2rem;
+}
+.project .container .text .container2 .cardPrincipal .card:hover {
+  border: none;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.project .container .text .container2 .cardPrincipal .card:hover .image {
+  border: none;
+}
+.project .container .images {
+  position: relative;
+}
+.project .container .images div {
+  position: absolute;
+}
+.project .container .images div:first-child {
+  top: 22rem;
+  left: 66rem;
+}
+.project .container .images div:first-child img {
+  width: 85rem;
+}
+@media only screen and (max-height: 915px) {
+  .project .container .images div:first-child {
+    top: -7rem;
+    left: 57rem;
+  }
+  .project .container .images div:first-child img {
+    width: 80rem;
+  }
+}
+.project .container .images div:nth-child(2) {
+  top: 19rem;
+  left: -7rem;
+}
+.project .container .images div:nth-child(2) img {
+  width: 14rem;
+}
+.project .container .images div:nth-child(3) {
+  top: 42rem;
+  left: -1rem;
+}
+.project .container .images div:nth-child(3) img {
+  width: 6rem;
+}
+@media only screen and (max-height: 915px) {
+  .project .container .images div:nth-child(3) {
+    top: 32rem;
+    left: 125rem;
+  }
+  .project .container .images div:nth-child(3) img {
+    width: 5rem;
+  }
+}
+.project .container .images div:nth-child(4) {
+  top: 40rem;
+  left: -10rem;
+}
+.project .container .images div:nth-child(4) img {
+  width: 23rem;
+}
+@media only screen and (max-height: 915px) {
+  .project .container .images div:nth-child(4) {
+    top: 33rem;
+    left: 120rem;
+  }
+  .project .container .images div:nth-child(4) img {
+    width: 14rem;
+  }
+}
+
+.skills {
+  background-color: #011221;
+  height: 100vh;
+  color: #607b96;
+  font-family: "Fira Code", monospace;
+}
+.skills .container .title {
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .title {
+    padding-top: 20rem;
+    padding-bottom: 4rem;
+  }
+}
+.skills .container .title .part1 {
+  display: flex;
+}
+.skills .container .title .part1 .logoimg {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  width: 12rem;
+  overflow: hidden;
+}
+.skills .container .title .part1 .logoimg img {
+  width: 100%;
+}
+.skills .container .title .part1 .name {
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+.skills .container .title .part1 .name h2 {
+  font-size: 2.5rem;
+  color: #4d5bce;
+  padding-bottom: 1rem;
+}
+.skills .container .title .part1 .name p {
+  padding-left: 7rem;
+  font-size: 1.5rem;
+}
+.skills .container .cards2 {
+  padding: 0 40rem;
+  position: relative;
+}
+.skills .container .cards2 .container3 {
+  display: flex;
+  flex-direction: column;
+}
+.skills .container .cards2 .container3 .fila1 {
+  gap: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills .container .cards2 .container3 .fila2 {
+  gap: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills .container .images {
+  position: relative;
+}
+.skills .container .images div {
+  position: absolute;
+}
+.skills .container .images div:first-child {
+  top: 11rem;
+  left: 117rem;
+}
+.skills .container .images div:first-child img {
+  width: 36rem;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .images div:first-child {
+    top: -32rem;
+    left: 102rem;
+  }
+  .skills .container .images div:first-child img {
+    width: 35rem;
+  }
+}
+.skills .container .images div:nth-child(2) {
+  top: 11rem;
+  left: -23rem;
+}
+.skills .container .images div:nth-child(2) img {
+  width: 55rem;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .images div:nth-child(2) {
+    top: 18rem;
+    left: 0rem;
+  }
+  .skills .container .images div:nth-child(2) img {
+    width: 14rem;
+  }
+}
+.skills .container .images div:nth-child(3) {
+  top: 2rem;
+  left: 124rem;
+}
+.skills .container .images div:nth-child(3) img {
+  width: 6rem;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .images div:nth-child(3) {
+    top: -18rem;
+    left: 13rem;
+  }
+  .skills .container .images div:nth-child(3) img {
+    width: 5rem;
+  }
+}
+.skills .container .images div:nth-child(4) {
+  top: 0rem;
+  left: 120rem;
+}
+.skills .container .images div:nth-child(4) img {
+  width: 25rem;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .images div:nth-child(4) {
+    top: -17rem;
+    left: 8rem;
+  }
+  .skills .container .images div:nth-child(4) img {
+    width: 14rem;
+  }
+}
+.skills .container .images div:nth-child(5) {
+  top: -23rem;
+  left: -9rem;
+}
+.skills .container .images div:nth-child(5) img {
+  width: 48rem;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .images div:nth-child(5) {
+    top: 5rem;
+    left: 46rem;
+  }
+  .skills .container .images div:nth-child(5) img {
+    width: 31rem;
+  }
+}
+.skills .container .images div:nth-child(6) {
+  top: 28rem;
+  left: -28rem;
+}
+.skills .container .images div:nth-child(6) img {
+  width: 69rem;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .images div:nth-child(6) {
+    top: -17rem;
+    left: 0rem;
+  }
+  .skills .container .images div:nth-child(6) img {
+    width: 35rem;
+  }
+}
+.skills .container .images div:nth-child(7) {
+  top: 1rem;
+  left: -33rem;
+  transform: rotate(90deg);
+}
+.skills .container .images div:nth-child(7) img {
+  width: 16rem;
+}
+@media only screen and (max-height: 915px) {
+  .skills .container .images div:nth-child(7) {
+    top: 11rem;
+    left: -11rem;
+    transform: rotate(90deg);
+  }
+  .skills .container .images div:nth-child(7) img {
+    width: 12rem;
+  }
+}
+
+.contact {
+  background-color: #011221;
+  height: 100vh;
+  color: #607b96;
+  font-family: "Fira Code", monospace;
+}
+.contact .container .title {
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .title {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+  }
+}
+.contact .container .title .part1 {
+  display: flex;
+}
+.contact .container .title .part1 .logoimg {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  width: 12rem;
+  overflow: hidden;
+}
+.contact .container .title .part1 .logoimg img {
+  width: 100%;
+}
+.contact .container .title .part1 .name {
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+.contact .container .title .part1 .name h2 {
+  font-size: 2.5rem;
+  color: #4d5bce;
+  padding-bottom: 1rem;
+}
+.contact .container .title .part1 .name p {
+  padding-left: 4rem;
+  font-size: 1.5rem;
+}
+.contact .container .cards2 {
+  padding: 0 10rem;
+  position: relative;
+  background-color: rgba(30, 45, 61, 0.5254901961);
+}
+.contact .container .cards2 .container3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.contact .container .cards2 .container3 .fila1 {
+  font-size: 2rem;
+}
+.contact .container .cards2 .container3 .fila1 .morado {
+  color: #7000ff;
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
+.contact .container .cards2 .container3 .fila1 .blanco {
+  color: #fff;
+}
+.contact .container .cards2 .container3 .fila1 .green {
+  color: #43d9ad;
+  font-weight: 300;
+}
+.contact .container .cards2 .container3 .fila1 .crema {
+  color: #e99287;
+}
+.contact .container .cards2 .container3 .fila1 .espacio {
+  padding-left: 5rem;
+}
+.contact .container .cards2 .container3 .fila1 .new {
+  padding-bottom: 2rem;
+}
+.contact .container .cards2 .container3 .fila2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+}
+.contact .container .cards2 .container3 .fila2 > p:first-child {
+  color: #fff;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+.contact .container .images {
+  position: relative;
+}
+.contact .container .images div {
+  position: absolute;
+}
+.contact .container .images div:first-child {
+  top: 11rem;
+  left: 117rem;
+}
+.contact .container .images div:first-child img {
+  width: 36rem;
+  display: none;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .images div:first-child {
+    top: -32rem;
+    left: 102rem;
+  }
+  .contact .container .images div:first-child img {
+    width: 35rem;
+    display: none;
+  }
+}
+.contact .container .images div:nth-child(2) {
+  top: 11rem;
+  left: -23rem;
+}
+.contact .container .images div:nth-child(2) img {
+  width: 55rem;
+  display: none;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .images div:nth-child(2) {
+    top: 18rem;
+    left: 0rem;
+  }
+  .contact .container .images div:nth-child(2) img {
+    width: 14rem;
+    display: none;
+  }
+}
+.contact .container .images div:nth-child(3) {
+  top: 2rem;
+  left: 124rem;
+}
+.contact .container .images div:nth-child(3) img {
+  width: 6rem;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .images div:nth-child(3) {
+    top: -18rem;
+    left: 13rem;
+  }
+  .contact .container .images div:nth-child(3) img {
+    width: 5rem;
+  }
+}
+.contact .container .images div:nth-child(4) {
+  top: 0rem;
+  left: 120rem;
+}
+.contact .container .images div:nth-child(4) img {
+  width: 25rem;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .images div:nth-child(4) {
+    top: -17rem;
+    left: 8rem;
+  }
+  .contact .container .images div:nth-child(4) img {
+    width: 14rem;
+  }
+}
+.contact .container .images div:nth-child(5) {
+  top: -23rem;
+  left: -9rem;
+}
+.contact .container .images div:nth-child(5) img {
+  width: 48rem;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .images div:nth-child(5) {
+    top: 5rem;
+    left: 46rem;
+  }
+  .contact .container .images div:nth-child(5) img {
+    width: 31rem;
+  }
+}
+.contact .container .images div:nth-child(6) {
+  top: 28rem;
+  left: -28rem;
+}
+.contact .container .images div:nth-child(6) img {
+  width: 69rem;
+  display: none;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .images div:nth-child(6) {
+    top: -17rem;
+    left: 0rem;
+  }
+  .contact .container .images div:nth-child(6) img {
+    width: 35rem;
+    display: none;
+  }
+}
+.contact .container .images div:nth-child(7) {
+  top: 1rem;
+  left: -33rem;
+  transform: rotate(90deg);
+}
+.contact .container .images div:nth-child(7) img {
+  width: 16rem;
+  display: none;
+}
+@media only screen and (max-height: 915px) {
+  .contact .container .images div:nth-child(7) {
+    top: 11rem;
+    left: -11rem;
+    transform: rotate(90deg);
+  }
+  .contact .container .images div:nth-child(7) img {
+    width: 12rem;
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

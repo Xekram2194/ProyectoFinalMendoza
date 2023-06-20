@@ -1,4 +1,4 @@
-.about{
+.project{
     background-color: $color-primary-2;
     height: 100vh;
     color: $color-secundary;
@@ -11,7 +11,7 @@
             justify-content: space-between;
             @media only screen and (max-height: 915px){
                 padding-top: 8.5rem;
-                padding-bottom: 3rem;
+                padding-bottom: 4rem;
             }
             .part1{ 
                 display: flex;
@@ -55,29 +55,74 @@
             .container2{
                 font-family: $font-principal;
                 padding: 2rem;
-                font-size: 2rem;
-                @media only screen and (max-height: 915px){
-                    font-size: 1rem;
-                }
-                .morado{
-                    color: $color-accent-3;
-                }
-                .green{
-                    font-weight: 300;
-                    color: $color-secundary-3;
-                }
-                .naranja{
-                    font-weight: 300;
-                    color: $color-accent;
-                }
-                >p{
-                font-size: 1.8rem;
-                    @media only screen and (max-height: 915px){
-                        font-size: 1.8rem;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: space-around;
+                gap: 4rem;
+                .cardPrincipal{
+                    padding: 2rem 0;
+                    width: 40rem;
+                    .title2{
+                        padding-left: 1rem;
+                        padding-bottom: 2rem;
+                        p{
+                            color: $color-accent-3;
+                            span{
+                                color: $color-secundary;
+                            }
+                        }
+                    }
+                    .card{
+                        border: .1rem solid $color-secundary;
+                        background-color: $color-primary-2;
+                        border-radius: 2rem;
+                        transition: all .2s ease-in-out;
+                        .image{
+                            border: .1rem solid $color-secundary;
+                            border-radius: 2rem;
+                            width: 39.8rem;
+                            height: 14rem;
+                            overflow: hidden;
+                            img{
+                                width: 100%;
+                                object-fit:fill;
+                            }
+                        }
+                        .resume{
+                            padding: 2rem;
+                            font-weight: 500;
+                            font-size: 1.6rem;
+                        }
+                        .buton{
+                            display: flex;
+                            justify-content: start;
+                            padding-bottom: 2rem;
+                            padding-left: 2rem;
+                            >a{
+                                border: .1rem solid $color-btn-2;
+                                background-color: $color-btn-2;
+                                color: $color-secundary-4;
+                                font-size: 1.3rem;
+                                font-family: $font-principal;
+                                font-weight: 300;
+                                padding: 1.5rem 2rem;
+                                border-radius: 1.2rem;
+                            }
+                        }
+                        &:hover{
+                            border: none;
+                            transform: scale(1.1);
+                            transition: all .2s ease-in-out;
+                            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+                            .image{
+                                border: none;
+                            }
+                        }
                     }
                 }
             }
         }
+        
         .images{
             position: relative;
             div{

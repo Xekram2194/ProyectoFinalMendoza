@@ -1,0 +1,167 @@
+.skills{
+    background-color: $color-primary-2;
+    height: 100vh;
+    color: $color-secundary;
+    font-family: $font-principal;
+    .container{
+        .title{
+            padding-top: 15rem;
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            @media only screen and (max-height: 915px){
+                padding-top: 20rem;
+                padding-bottom: 4rem;
+            }
+            .part1{ 
+                display: flex;
+                .logoimg{
+                    border: 5px solid $color-secundary-4;
+                    border-radius: 50%;
+                    width: 12rem;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .name{
+                    padding-top: 3rem;
+                    padding-left: 2rem;
+                    h2{
+                        font-size: 2.5rem;
+                        color: $color-accent-3;
+                        padding-bottom:1rem;
+                    }
+                    p{
+                        padding-left: 7rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .cards2{
+            padding: 0 40rem;
+            position: relative;
+            .container3{
+                display: flex;
+                flex-direction: column;
+                .fila1{
+                    gap: 4rem;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                .fila2{
+                    gap: 4rem;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+        .images{
+            position: relative;
+            div{
+                position: absolute;
+                &:first-child{
+                    top: 11rem;
+                    left: 117rem;
+                    img{
+                        width: 36rem;
+                    }
+                    @media only screen and (max-height: 915px){
+                        top: -32rem;
+                        left: 102rem;
+                        img{
+                            width: 35rem;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    top: 11rem;
+                    left: -23rem;
+                    img{
+                        width: 55rem;
+                    }
+                    @media only screen and (max-height: 915px){
+                        top: 18rem;
+                        left: 0rem;
+                        img{
+                            width: 14rem;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    top: 2rem;
+                    left: 124rem;
+                    img{
+                        width: 6rem;
+                    }
+                    @media only screen and (max-height: 915px){
+                        top: -18rem;
+                        left: 13rem;
+                        img{
+                            width: 5rem;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    top: 0rem;
+                    left: 120rem;
+                    img{
+                        width: 25rem;
+                    }
+                    @media only screen and (max-height: 915px){
+                        top: -17rem;
+                        left: 8rem;
+                        img{
+                            width: 14rem;
+                        }
+                    }
+                }
+                &:nth-child(5){
+                    top: -23rem;
+                    left: -9rem;
+                    img{
+                        width: 48rem;
+                    }
+                    @media only screen and (max-height: 915px){
+                        top:5rem;
+                        left: 46rem;
+                        img{
+                            width: 31rem;
+                        }
+                    }
+                }
+                &:nth-child(6){
+                    top: 28rem;
+                    left: -28rem;
+                    img{
+                        width: 69rem;
+                    }
+                    @media only screen and (max-height: 915px){
+                        top: -17rem;
+                        left: 0rem;
+                        img{
+                            width: 35rem;
+                        }
+                    }
+                }
+                &:nth-child(7){
+                    top: 1rem;
+                    left: -33rem;
+                    transform: rotate(90deg);
+                    img{
+                        width: 16rem;
+                    }
+                    @media only screen and (max-height: 915px){
+                        top: 11rem;
+                        left: -11rem;
+                        transform: rotate(90deg);
+                        img{
+                            width: 12rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
