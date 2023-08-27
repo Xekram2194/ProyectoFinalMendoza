@@ -17,13 +17,18 @@
     <nav class="nav_bar">
         <div class="container pt-2 pb-2">
             <div class="logo"> <a href="/"><span> < </span>Marco Mendoza<span> /> </span></a> </div>
-            <div class="navbar">
+            <div class="navbar" id="_items">
                 <ul>
                     <li><a href="about.html">_<span>a</span>bout-me</a></li>
                     <li><a href="project.html">_<span>p</span>rojects</a></li>
                     <li><a href="skill.html">_<span>s</span>kills</a></li>
                     <li><a href="contact.html">_<span>c</span>ontact-me</a></li>
                 </ul>
+            </div>
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -107,6 +112,10 @@
             backSpeed: 100,
             backDelay: 5
         })
+        _toggle.onclick = () => {
+            _items.classList.toggle("open")
+            _toggle.classList.toggle("close")
+        }
     </script>
 <script src="js/codigo.js"></script>
 </html>
